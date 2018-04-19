@@ -43,11 +43,13 @@ function getMovies(searchText) {
             console.log(movies);
             var output = '';
             $.each(movies, function (index, movie) {
-                output += '<div class="col-md-3">';
-                output += '<div class="well text-center">';
+                output += '<div class="col-lg-3 col-md-4 col-sm-6">';
+                output += '<div class="well">';
                 output += '<img src="http://image.tmdb.org/t/p/w185/' + movie.poster_path + '">';
+                output += '<div class="dsc-box">';
                 output += '<h5>' + movie.title + '</h5>';
-                output += '<a onclick=movieSelected("' + movie.id + ' class="btn btn-primary" href="#")>Movie Details</a>';
+                output += '<a onclick=movieSelected("' + movie.id + ' class="btn" href="#")>Movie Details</a>';
+                output += '</div>';
                 output += '</div>';
                 output += '</div>';
             });
