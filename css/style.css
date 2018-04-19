@@ -16,7 +16,7 @@ body {
      color: #282828 !important;
 }
 
-#movies .col-md-3 .well {
+#movies .col-md-4 .well {
     margin-bottom: 30px;
     box-shadow: 5px 5px 25px rgba(0, 0, 0, .15);
     flex: 1;
