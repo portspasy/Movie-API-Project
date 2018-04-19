@@ -9,6 +9,7 @@ body {
     width: 100%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    height: 280px;
 }
 
 #movies .col-md-3  {
@@ -18,7 +19,7 @@ body {
 
 #movies .col-md-4 .well {
     margin-bottom: 30px;
-    box-shadow: 5px 5px 25px rgba(0, 0, 0, .15);
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, .15);
     flex: 1;
     position: relative;
     width: 100%;
@@ -56,6 +57,34 @@ body {
     text-align: center;
     padding: 15px;
 }
+
+.well-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    bottom: 24%;
+    z-index: 100;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, .6);
+    transition: all .5s ease;
+}
+
+.well-hover:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.well-hover span {
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 @media (max-width: 575px) and (min-width: 380px) {
     .col-md-4 {
         max-width: 320px;

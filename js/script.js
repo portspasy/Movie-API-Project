@@ -50,8 +50,12 @@ function getMovies(searchText) {
                 output += '<h5>' + movie.title + '</h5>';
                 output += '<a onclick=movieSelected("' + movie.id + ' class="btn" href="#")>Movie Details</a>';
                 output += '</div>';
+                output += '<div class="well-hover">';
+                output += '<span>' + movie.vote_average + '</span>';
                 output += '</div>';
                 output += '</div>';
+                output += '</div>';
+                
             });
 
             $('#movies').html(output);
@@ -80,7 +84,7 @@ function getMovie() {
             let output = `
                 <div class="row">
                     <div class="col-md-4">
-                        <img src="${movie.Poster}" class="thumbnail">
+                        <img src="http://image.tmdb.org/t/p/w185/' + movie.poster_path + '" class="thumbnail">
                     </div>
                     <div class="col-md-6">
                         <div class="well text-center">
