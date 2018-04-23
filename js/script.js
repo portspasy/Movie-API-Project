@@ -50,7 +50,7 @@ function getMovies(searchText) {
                 output += '<h5>' + movie.title + '</h5>';
                 output += '<a onclick=movieSelected("' + movie.id + ' class="btn" href="#")>Movie Details</a>';
                 output += '</div>';
-                output += '<div class="well-hover">';
+                output += '<div class="imdb-score">';
                 output += '<span>' + movie.vote_average + '</span>';
                 output += '</div>';
                 output += '</div>';
