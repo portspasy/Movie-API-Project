@@ -53,6 +53,9 @@ function getMovies(searchText) {
                 output += '<div class="imdb-score">';
                 output += '<span>' + movie.vote_average + '</span>';
                 output += '</div>';
+                output += '<div class="movie-dsc">';
+                output += '<span>' + movie.overview + '</span>';
+                output += '</div>';
                 output += '</div>';
                 output += '</div>';
                 
